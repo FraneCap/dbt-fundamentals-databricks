@@ -1,0 +1,16 @@
+# dbt artifacts (generados)
+target/
+dbt_packages/
+logs/
+
+# Entornos / secretos locales
+.venv/
+.env
+
+# dbt local (por las dudas)
+profiles.yml
+
+# Cosas de editor/SO (opcionales, pero útiles)
+.vscode/
+.idea/
+.DS_Store
