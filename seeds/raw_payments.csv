@@ -1,0 +1,9 @@
+id,order_id,payment_method,amount
+9001,101,credit_card,120.00
+9002,102,bank_transfer,60.00
+9003,102,coupon,10.00
+9004,103,credit_card,35.50
+9005,104,credit_card,99.99
+9006,105,bank_transfer,240.00
+9007,106,credit_card,15.00
+9008,107,credit_card,75.00
