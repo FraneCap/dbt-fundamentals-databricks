@@ -5,12 +5,22 @@ models:
     columns:
       - name: customer_id
         tests: [not_null, unique]
+
   - name: stg_orders
     columns:
       - name: order_id
         tests: [not_null, unique]
       - name: customer_id
-        tests: [not_null]
+        tests:
+          - not_null
+          - relationships:    # Foreing Key a customers
+              to: ref('stg_customers')
+              field: customer_id
+      - name: status
+        tests:
+          - accepted_values:
+              values: ['placed','shipped','returned']
+
   - name: stg_payments
     columns:
       - name: order_id
