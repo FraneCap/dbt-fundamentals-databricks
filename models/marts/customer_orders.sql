@@ -1,4 +1,4 @@
-{{ config(materialized='table') }}
+{{ config(materialized='table', contract=true, access='public') }}
 
 select
   c.customer_id,

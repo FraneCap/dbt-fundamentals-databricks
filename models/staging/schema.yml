@@ -13,7 +13,7 @@ models:
       - name: customer_id
         tests:
           - not_null
-          - relationships:    # Foreing Key a customers
+          - relationships: # FK
               to: ref('stg_customers')
               field: customer_id
       - name: status
